@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": "0",
+      "project_name": "Project One",
+      "description": "The first project",
+      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
+      "live_link": "https://realjhoo.com/projects/*****",
+      "github_link": "https://github.com/realjhoo/*****",
+      "image_urls": [
+        "/images/*****.***",
+        "/images/*****/***",
+        "/images/*****.***"
+      ]
+    },
+    {
+      "id": "1",
+      "project_name": "Project Two",
+      "description": "The second project",
+      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
+      "live_link": "https://realjhoo.com/projects/*****",
+      "github_link": "https://github.com/realjhoo/*****",
+      "image_urls": [
+        "/images/*****.***",
+        "/images/*****/***",
+        "/images/*****.***"
+      ]
+    },
+    {
+      "id": "2",
+      "project_name": "Project Three",
+      "description": "The third project",
+      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
+      "live_link": "https://realjhoo.com/projects/*****",
+      "github_link": "https://github.com/realjhoo/*****",
+      "image_urls": [
+        "/images/*****.***",
+        "/images/*****/***",
+        "/images/*****.***"
+      ]
+    }
+  ]
+}
