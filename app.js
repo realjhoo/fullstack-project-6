@@ -1,30 +1,27 @@
-// initialize the app
 const express = require("express");
-const path = require("path");
+const routes = require("./routes/index");
+const projectRoute = require("./routes/project");
 const app = express();
-const { projects } = require("./data.json"); //an {object}
 
-// set public directory to static -> css and js files
-app.use("/static", express.static("public"));
-// set views for pug files
-app.set("views", path.join(__dirname, "views"));
-// use pug
 app.set("view engine", "pug");
+app.use("/static", express.static("public"));
+app.use(routes);
+app.use("/", projectRoute);
 
-// get all results to root
-app.get("/", (req, res) => {
-  res.render("index");
+// error stuff ********************
+// set error
+app.use((req, res, next) => {
+  const err = new Error("We cannot find the requested url");
+  err.status = 404;
+  next(err);
 });
 
-app.get("/project", (req, res) => {
-  res.render("project");
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.status(err.status);
+  res.render("error");
+  console.log("Error: " + err.status + " " + err.message);
 });
-
-app.get("/about", (req, res) => {
-  res.render("about");
-});
-
-console.log(projects[0].project_name);
 
 // ==================================================
 // app listens to port 3k. Shows time of last refresh

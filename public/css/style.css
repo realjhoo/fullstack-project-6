@@ -1,3 +1,7 @@
+html {
+  background-color: #f4f4f4;
+}
+
 h1,
 h2,
 h3,
@@ -151,4 +155,10 @@ a:hover {
 
 .portfolio-bio {
   line-height: 25px;
+}
+
+.errmsg {
+  padding: 2rem 0 5rem 2rem;
+  background-color: #f4f4f4;
+  color: #444;
 }
