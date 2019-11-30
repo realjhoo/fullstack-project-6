@@ -1,20 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const { projects } = require("../data.json"); // an {object}
-// const project = require("../routes/project");
+const { projects } = require("../data.json");
 
-// set root to index.pug
+// set root route
 router.get("/", (req, res) => {
   res.render("index", {
     projects
   });
 });
 
-// set /about page tp about.pug
+// set about route
 router.get("/about", (req, res) => {
   res.render("about");
 });
-
-console.log("index.js: " + projects[0].project_name);
 
 module.exports = router;

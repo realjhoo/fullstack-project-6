@@ -8,7 +8,7 @@ app.use("/static", express.static("public"));
 app.use(routes);
 app.use("/", projectRoute);
 
-// error stuff ********************
+// ********** error handler **********
 // set error
 app.use((req, res, next) => {
   const err = new Error("We cannot find the requested url");
@@ -16,6 +16,7 @@ app.use((req, res, next) => {
   next(err);
 });
 
+// render error page
 app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);
@@ -23,9 +24,9 @@ app.use((err, req, res, next) => {
   console.log("Error: " + err.status + " " + err.message);
 });
 
-// ==================================================
-// app listens to port 3k. Shows time of last refresh
+// set app's port to 3000
 app.listen(3000, () => {
+  // log out port and current time
   let currentTime = getTime();
   console.log(currentTime + "Server running on localhost port 3000");
 });

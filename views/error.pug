@@ -1,10 +1,15 @@
 extends layout
 
 block content
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
   .errmsg
     h1 ¯\_(ツ)_/¯
     h1= error.message
     h4 We looked everywhere, but no... we suspect user error, tbh
     h2 Error #{error.status} - File Not Found
-    pre Try the back button... that usually helps
+    pre Try the back button... that usually helps.
     pre= error.stack
+    pre Click the button below to return Home.
+    nav.grid-container.portfolio-breadcrumb
+      a(href='/') ← Back

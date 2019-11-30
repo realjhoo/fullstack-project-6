@@ -1,0 +1,10 @@
+html {
+  background-color: #f4f4f4;
+  color: #444;
+}
+
+.errmsg {
+  padding: 2rem 0 5rem 2rem;
+  background-color: #f4f4f4;
+  color: #444;
+}

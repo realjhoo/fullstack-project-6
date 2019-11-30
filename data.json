@@ -2,41 +2,54 @@
   "projects": [
     {
       "id": "0",
-      "project_name": "Project One",
-      "description": "The first project",
-      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
-      "live_link": "https://realjhoo.com/projects/*****",
-      "github_link": "https://github.com/realjhoo/*****",
+      "project_name": "Random Quotes",
+      "description": "Using Javascript, this app displays a random quote on refresh, or at a set interval",
+      "technologies": ["HTML", "CSS", "Javascript", "Dev Magic"],
+      "live_link": "https://realjhoo.com/projects/hoo-project-10",
+      "github_link": "https://github.com/realjhoo/fullstack-project-1",
       "image_urls": [
-        "/static/images/1.png",
-        "https://placehold.it/550x550",
-        "https://placehold.it/1200x550'"
+        "/static/images/project1.png",
+        "/static/images/qcap1.png",
+        "/static/images/qcap2.png"
       ]
     },
     {
       "id": "1",
-      "project_name": "Project Two",
-      "description": "The second project",
-      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
-      "live_link": "https://realjhoo.com/projects/*****",
-      "github_link": "https://github.com/realjhoo/*****",
+      "project_name": "Potential - A Chrome Extension",
+      "description": "Based on the popular Chrome Extension, Momentum, Potential  is a simple Chrome extension that replaces the New Page tab with a display of the time, local weather, moon phase and some inspirational phrases.",
+      "technologies": ["HTML", "CSS", "Javascript", "Coding Magic"],
+      "live_link": "https://realjhoo.com/projects/potential",
+      "github_link": "https://github.com/realjhoo/potential-chrome-extension",
       "image_urls": [
-        "/static/images/2.png",
-        "https://placehold.it/1200x550'",
-        "https://placehold.it/1200x550'"
+        "/static/images/project2.png",
+        "/static/images/qcap3.png",
+        "/static/images/qcap4.png"
       ]
     },
     {
       "id": "2",
-      "project_name": "Project Three",
-      "description": "The third project",
-      "technologies": ["HTML", "CSS", "Javascript", "Magic"],
-      "live_link": "https://realjhoo.com/projects/*****",
-      "github_link": "https://github.com/realjhoo/*****",
+      "project_name": "Toki Pona Sitelen",
+      "description": "This app allows the user to practice matching Toki Pona sitelen with their appropriate nimi in a multiple choice format.",
+      "technologies": ["HTML", "CSS", "Javascript", "Toki Pona Magic"],
+      "live_link": "https://realjhoo.com/projects/toki-pona-sitelen/",
+      "github_link": "https://github.com/realjhoo/toki-pona",
       "image_urls": [
-        "/static/images/3.png",
-        "https://placehold.it/1200x550'",
-        "https://placehold.it/1200x550'"
+        "/static/images/project3.png",
+        "/static/images/qcap5.png",
+        "/static/images/qcap6.png"
+      ]
+    },
+    {
+      "id": "3",
+      "project_name": "API Employee Directory",
+      "description": "Using an API to fetch and display random employees, and allow searching using a live search.",
+      "technologies": ["HTML", "CSS", "Javascript", "Fetch Magic"],
+      "live_link": "https://realjhoo.com/projects/fs-project-8",
+      "github_link": "https://github.com/realjhoo/fullstack-project-5",
+      "image_urls": [
+        "/static/images/project4.png",
+        "/static/images/qcap7.png",
+        "/static/images/qcap8.png"
       ]
     }
   ]
