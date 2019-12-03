@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 
 // render error page
 app.use((err, req, res, next) => {
+  err.status = err.status || 500;
   res.locals.error = err;
   res.status(err.status);
   res.render("error");
